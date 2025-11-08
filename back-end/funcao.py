@@ -44,3 +44,22 @@ def adicionar_produto(nome, categoria, preco, quantidade ):
             conexao.commit()
 
 # adicionar_produto("cuscuz", "flocao", 15.00, 30)
+
+#Função Listar produtos
+
+def listar_produtos():
+    conexao, cursor = conector()
+    if conexao:
+        try:
+            cursor.execute(
+                "SELECT * FROM produtos ORDER BY id"
+            )
+            return cursor.fetchall()
+        except Exception as erro:
+            print(f"Erro ao listar o produto {erro}")
+            return[]
+        finally:
+            cursor.close
+            conexao.close
+
+listar_produtos()
