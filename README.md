@@ -1,5 +1,5 @@
 
-📦 Projeto Final back-end
+# 📦 Projeto Final back-end
  ┣ 📂 back-end
  ┃ ┣ 📂 __pycache__
  ┃ ┣ 📜 conexao.py      # Arquivo responsável pela conexão com o banco de dados
@@ -12,10 +12,10 @@
  ┗ 📜 README.md         # Documentação do projeto
 
 
-🚀 Tecnologias Utilizadas
+# 🚀 Tecnologias Utilizadas
 
 
-BACK-END
+## BACK-END
 
 
 - FastAPI
@@ -30,7 +30,7 @@ BACK-END
 - Python-dotenv
 
 
-FRONT-END
+## FRONT-END
 
 
 - Streamlit
@@ -39,7 +39,7 @@ FRONT-END
 - Requests
 
 
-*Instalar dependência
+# *Instalar dependência
 
 
  pip install fastapi uvicorn psycopg2 python-dotenv streamlit requests
@@ -47,7 +47,7 @@ FRONT-END
 
 
 
-🔑 Configuração do arquivo .env
+# 🔑 Configuração do arquivo .env
 
 
 DB_NAME=nome_do_banco
@@ -85,7 +85,7 @@ quantidade   INTEGER       Quantidade em estoque
 
 
 
-🧠 Funcionalidades (CRUD)
+# 🧠 Funcionalidades (CRUD)
 
 
 ✔ Criar produtos
@@ -106,7 +106,7 @@ Tudo isso via funções do arquivo funcao.py.
 
 
 
-📡 Rotas da API (FastAPI)
+## 📡 Rotas da API (FastAPI)
 
 
 GET /
@@ -165,7 +165,7 @@ Parâmetros:
 
 
 
-▶️Como Rodar o Back-end (API)
+# ▶️Como Rodar o Back-end (API)
 
 
 uvicorn back-end.main:app --reload
@@ -185,7 +185,7 @@ A API abrirá em:
 
 
 
-💻 Como Rodar o Front-end (Streamlit)
+# 💻 Como Rodar o Front-end (Streamlit)
 
 
 python -m streamlit run front-end/app.py
@@ -193,11 +193,11 @@ python -m streamlit run front-end/app.py
 
 
 
-🖥️ Interface (Streamlit)
+# 🖥️ Interface (Streamlit)
 
 A interface contém:
 
-🔍 Catálogo de produtos
+# 🔍 Catálogo de produtos
 
 Tabela com todos os produtos cadastrados.
 
@@ -206,7 +206,7 @@ Tabela com todos os produtos cadastrados.
 Formulário de inclusão.
 
 
-❌ Deletar produto
+# ❌ Deletar produto
 
 Remove produtos pelo ID.
 
