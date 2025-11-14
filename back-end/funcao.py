@@ -66,7 +66,7 @@ def listar_produtos():
 
 #Função atualizar produto
 
-def atualizar_produtos(quantidade, id):
+def atualizar_produtos(id, quantidade):
     conexao, cursor = conector()
     if conexao:
         try:
@@ -118,4 +118,4 @@ def buscar_produtos(id):
         finally:
             cursor.close()
             conexao.close()
-# buscar_produtos()
+# print(buscar_produtos(3))
