@@ -26,7 +26,7 @@ def listar_produto():
                 "quantidade": linha[4]
             }
         )
-    return {"produto": listar}
+    return {"produtos": listar}
 
 
 @app.delete("/produtos/{id}")
