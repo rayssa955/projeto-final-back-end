@@ -92,7 +92,7 @@ elif menu == "Atualizar Produto":
 
     if st.button("Atualizar"):
         response = requests.put(
-            f"{API_URL}/produtos/id?id={id}&quantidade={nova_quantidade}"
+            f"{API_URL}/produtos/{id}"
         )
 
         if response.status_code == 200:
