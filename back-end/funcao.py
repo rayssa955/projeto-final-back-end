@@ -118,4 +118,5 @@ def buscar_produtos(id):
         finally:
             cursor.close()
             conexao.close()
+            
 # print(buscar_produtos(3))
